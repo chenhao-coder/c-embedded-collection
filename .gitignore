@@ -1,55 +1,64 @@
-# Prerequisites
-*.d
-
-# Object files
+# --- 编译生成文件 ---
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
 *.out
-*.app
-*.i*86
-*.x86_64
+*.so
+*.a
+*.dylib
+*.lib
+*.dll
+
+# --- 构建目录 ---
+build/
+bin/
+dist/
+out/
+*.elf
 *.hex
+*.bin
+*.map
+*.list
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# --- IDE和编辑器 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# --- 嵌入式特定 ---
+*.uvprojx
+*.uvoptx
+*.axf
+*.crf
+*.d
+*.dep
+*.tra
+*.pbi
+*.pbd
 
-# debug information files
-*.dwo
+# --- 系统文件 ---
+.DS_Store
+Thumbs.db
+*.pidb
+*.db
+
+# --- 日志和临时文件 ---
+*.log
+*.tmp
+*.temp
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# --- 项目特定 ---
+firmware.bin
+flash_image.bin
